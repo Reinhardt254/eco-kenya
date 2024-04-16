@@ -1,0 +1,175 @@
+.services-page-image{
+   width: 100%;
+   max-height: 80vh;
+}
+
+@media only screen and (min-width: 800px){
+   .small{
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 800px){
+   .large{
+      display: none;
+   }
+}
+
+.services-layout{
+   height: 100%;
+   width: 100%;
+   position: relative;
+   color: white;
+}
+
+.services-layout-text{
+   position: absolute;
+   left: 10%;
+   bottom: 50%;
+   transform: translate(-10%, 50%);
+}
+
+.services-layout-h1{
+   font-weight: 600;
+   font-size: 1.6rem;
+}
+
+.services-adapt-card{
+   height: 100%;
+   padding-left: 0.8rem;
+   padding-right: 0.8rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+.services-adapt-card-h1{
+   font-weight: 500;
+   font-size: 1.4rem;
+   padding-top: 0.3rem;
+   text-align: center;
+}
+
+.services-our-h1{
+   text-align: center;
+   padding-bottom: 0.8rem;
+   font-size: 1.4rem;
+   color: green;
+}
+
+.services-our-container{
+   height: 100%;
+   padding-left: 0.8rem;
+   padding-right: 0.8rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   background-color: rgb(237, 255, 251);
+}
+
+.services-our-card{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.services-icons{
+   height: 5rem;
+   padding-bottom: 0.4rem;
+}
+
+.services-our-h2{
+   padding-bottom: 0.4rem;
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+.services-our-p{
+   font-size: 0.9rem;
+   font-weight: 500;
+}
+
+@media only screen and (min-width: 600px){
+   .services-our-cards{
+      display: flex;
+      flex-direction: row;
+   }
+
+   .services-adapt-card-h1{
+      font-weight: 500;
+      font-size: 1.8rem;
+      padding-top: 0.3rem;
+      text-align: center;
+   }
+   
+   .services-our-h1{
+      text-align: center;
+      padding-bottom: 0.8rem;
+      font-size: 1.8rem;
+      color: green;
+   }
+
+   .services-our-h2{
+      padding-bottom: 0.4rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+   }
+   
+   .services-our-p{
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   .services-our-card{
+      width: auto;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      text-align: center;
+   }
+}
+
+@media only screen and (min-width: 800px){
+   .services-our-container{
+      height: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+   }
+
+   .services-adapt-card-h1{
+      font-weight: 500;
+      font-size: 2.2rem;
+      padding-top: 1rem;
+      text-align: center;
+   }
+
+   .services-our-h2{
+      padding-bottom: 0.4rem;
+      font-weight: 600;
+      font-size: 1.4rem;
+   }
+   
+   .services-our-p{
+      font-size: 1.2rem;
+      font-weight: 500;
+   }
+}
+
+@media only screen and (min-width: 1500px){
+   .services-our-container{
+      height: 100%;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 2.5rem;
+      padding-bottom: 2rem;
+   }
+}
+
+
+
