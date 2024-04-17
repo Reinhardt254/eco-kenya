@@ -135,8 +135,8 @@ body{
       font-size: 1.5rem;
       padding-left: 0.8rem;
       padding-right: 0.8rem;
-      padding-top: 2rem;
-      padding-bottom: 16%;
+      padding-top: 1rem;
+      padding-bottom: 20%;
       color:green;
    }
 
@@ -145,15 +145,15 @@ body{
       font-size: 1.5rem;
       padding-left: 0.8rem;
       padding-right: 0.8rem;
-      padding-top: 2rem;
-      padding-bottom: 18%;
+      padding-top: 1.5rem;
+      padding-bottom: 20%;
       color:green;
    }
 
    .about-cards-image-small{
       position: absolute;
       width: 80%;
-      top: -10%;
+      top: -15vw;
       left: -5%;
    }
 
@@ -181,7 +181,7 @@ body{
       padding-left: 0.8rem;
       padding-top: 70%;
       padding-bottom: 1rem;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
    }
 
    .about-cards-text-ps{
@@ -190,16 +190,58 @@ body{
       padding-left: 0.8rem;
       padding-top: 66%;
       padding-bottom: 1rem;
-      font-size: 1.1rem;
+      font-size: 0.8rem;
    }
 }
 
-@media only screen and (min-width:800px){
+@media only screen and (min-width: 600px){
    .about-cards-image{
       height: auto;
-      width: 100%;
+      width: 100%
    }
 
+   .about-cards-container{
+      padding-top: 1rem;
+      margin-right: 0%;
+      padding-right: 0.8rem;
+      padding-left: 0.8rem;
+      height:auto;
+    }
+}
+
+@media only screen and (min-width: 850px){
+   .about-cards-image{
+      height: 100%;
+      width: auto
+   }
+
+   .about-cards-container{
+      padding-top: 1rem;
+      margin-right: 0%;
+      padding-right: 5%;
+      padding-left: 5%;
+      height:auto;
+    }
+
+    .about-cards-text-p{
+      height: auto;
+      width: 100%;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .pr{
+     padding-right: 1rem;
+   } 
+      
+}
+
+@media only screen and (min-width: 1050px){
    .about-cards-container{
       padding-top: 1rem;
       margin-right: 0%;
@@ -207,6 +249,11 @@ body{
       padding-left: 10%;
       height:auto;
     }
+
+    .about-cards-image{
+      height: 100%;
+      width: auto
+   }
 }
 
 @media only screen and (min-width: 1400px){
@@ -221,5 +268,17 @@ body{
     .about-cards-image{
       height: 100%;
       width: auto
+   }
+
+   .about-cards-text-p{
+      height: auto;
+      width: 100%;
+      padding-top: 1rem;
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      font-size: 1.4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
 }
