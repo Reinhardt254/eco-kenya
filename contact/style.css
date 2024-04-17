@@ -1,0 +1,52 @@
+.contact-layout-image{
+  width: 100%;
+}
+
+.contact-layout-content{
+   position: relative;
+}
+
+.contact-layout-text{
+  position: absolute;
+  color: white;
+  bottom: 50%;
+  left: 10%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transform: translate(-10%, 50%);
+}
+
+.contact-card{
+   text-align: center;
+}
+.contact-text-h1{
+   font-size: 1.4rem;
+   font-weight: 100;
+   padding-top: 1.3rem;
+}
+
+.contact-text-h2{
+   font-size: 1.4rem;
+   padding-top: 2rem;
+   font-weight: 600;
+}
+
+@media only screen and (min-width: 800px){
+   .contact-card{
+      text-align: center;
+      padding-left: 20vw;
+      padding-right: 20vw;
+   }
+
+   .contact-text-h1{
+      font-size: 2rem;
+      font-weight: 100;
+      padding-top: 2rem;
+   }
+   
+   .contact-text-h2{
+      font-size: 2rem;
+      padding-top: 2rem;
+      font-weight: 600;
+   }
+}

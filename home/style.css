@@ -5,7 +5,125 @@ body{
 .home-page{
    height: 100%;
    width: 100%;
+   position: relative;
 }
+
+/* ============================================================NAVBAR========================================================= */
+
+.navbar{
+   position: absolute;
+   top: 0;
+}
+
+.navbar-bg-image{
+   width: 100%;
+}
+
+.navbar-contents{
+   position: relative;
+}
+
+.navbar-container{
+   position: absolute;
+   bottom: 50%;
+   left: 10%;
+   transform: translate(-10%, 50%);
+   color: white;
+}
+
+.navbar-content{
+   width: 90vw;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar-logo{
+   margin-right: auto;
+}
+
+.navbar-logo-image{
+   margin-right: auto;
+   padding-left: 3rem;
+}
+
+.navbar-links{
+   display: flex;
+   margin-left: auto;
+}
+
+.navbar-links a{
+   padding-right: 2rem;
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+   .navbar-links {
+      display: none;
+   }
+}
+
+.toggled-nav{
+   background-color: white;
+   height: 100%;
+   width: 100%;
+   display: none;
+}
+
+.toggle-nav{
+   position: fixed;
+   z-index: 100;
+   width: 100%;
+   height: 100vh;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   padding-top: 40%;
+   top: 0;
+}
+
+.toggle-nav-cont{
+   display: flex;
+   flex-direction: column;
+}
+
+.toggle-back{
+   position: absolute;
+   right: 5%;
+   top: 2%;
+}
+
+.toggle-nav a{
+   padding-bottom: 1rem;
+   font-size: 1rem;
+   font-weight: 500;
+   text-align: center;
+   cursor: pointer;
+}
+
+.menu-icon{
+   height: 24px;
+   width: 24px;
+   cursor: pointer;
+   padding-right: 1rem;
+}
+
+.x-icon{
+   height: 24px;
+   width: 24px;
+   cursor: pointer;
+}
+
+@media only screen and (min-width: 600px){
+   .menu-icon{
+      display: none;
+   }
+}
+
+
+/* ==========================================================HOME-PAGE========================================================== */
+
 
 .home-page-image{
    width: 100%;
@@ -40,12 +158,12 @@ body{
 }
 
 .home-overlay-h1{
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .home-overlay-h2{
-   font-size: 2rem;
+   font-size: 1.2rem;
    margin-top: 1rem;
    font-weight: 600;
 }
@@ -57,7 +175,7 @@ body{
 
 .home-overlay-button a{
    background-color: green;
-   font-size: 0.9rem;
+   font-size: 0.7rem;
    font-weight: 600;
    padding: 0.6rem;
 }
@@ -67,6 +185,74 @@ body{
    color: green;
    transition: 0.5s ease;
 }
+
+@media only screen and (min-width: 600px){
+   .home-overlay-h1{
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    
+    .home-overlay-h2{
+       font-size: 1.2rem;
+       margin-top: 1rem;
+       font-weight: 600;
+    }
+
+    .home-overlay-text{
+      position: absolute;
+      color: white;
+      top: 55%;
+      left: 5%;
+      transform: translate(-5%, -50%);
+   }
+}
+
+@media only screen and (min-width: 800px){
+   .home-overlay-h1{
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    
+    .home-overlay-h2{
+       font-size: 1.4rem;
+       margin-top: 1rem;
+       font-weight: 600;
+    }
+
+    .home-overlay-button a{
+      background-color: green;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.6rem;
+   }
+}
+
+@media only screen and (min-width: 1100px){
+   .home-overlay-h1{
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    
+    .home-overlay-h2{
+       font-size: 1.8rem;
+       margin-top: 1rem;
+       font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+   .home-overlay-h1{
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    
+    .home-overlay-h2{
+       font-size: 2rem;
+       margin-top: 1rem;
+       font-weight: 600;
+    }
+}
+
 
 /* =======================================================================WHO WE ARE======================================================= */
 
@@ -85,20 +271,20 @@ body{
 }
 
 .heading{
-   font-size: 1.8rem;
+   font-size: 1.4rem;
    font-weight: 600;
 }
 
 .who-we-are-paragraph{
    padding-top: 1rem;
-   font-weight: 400;
-   font-size: 1.2rem;
+   font-weight: 200;
+   font-size: 1rem;
 }
 
 .who-we-are-cards{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   width: 60%;
+   width: 80%;
    padding-top: 1rem;
    padding-bottom: 1rem;
 }
@@ -107,9 +293,14 @@ body{
     display:flex;
     height: auto;
     width: auto;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
+
+ .who-we-are-icon-text{
+   font-size: 0.9rem;
+   font-weight: bold;
+ }
 
 
 .r{
@@ -131,6 +322,10 @@ body{
 
 .pt{
    padding-top: 1rem;
+}
+
+.pl{
+   padding-left: 1.5rem;
 }
 
 .who-we-are-button{
@@ -165,6 +360,14 @@ body{
       padding-top: 2rem;
    }
 
+   .who-we-are-content{
+      display:flex;
+      height: auto;
+      width: auto;
+      justify-content: start;
+      align-items: center;
+  }
+
    .who-we-are-title{
       padding-top: 0rem;
    }
@@ -185,6 +388,10 @@ body{
       width: 100%;
       padding-top: 2rem;
       padding-bottom: 1.5rem;
+   }
+
+   .pl{
+      padding-left: 1rem;
    }
 }
 

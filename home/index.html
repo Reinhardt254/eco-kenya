@@ -8,28 +8,26 @@
 </head>
 <body>
    <section>
-<!-- ===================================================================================================================HEADING============================================================ -->
-      <div class="navbar">
-         <div class="navbar-container">
-            <div class="navbar-logo">
-               <img
-                  src=""
-                  alt="logo"
-                  loading="lazy"
-                  class="navbar-logo-image"
-               />
-            </div>
-            <div class="navbar-links">
+      <div class="toggled-nav" id="toggle-nav">
+         <div class="toggle-nav">
+            <div class="toggle-nav-cont">
                <a>HOME</a>
                <a>ABOUT US</a>
                <a>SERVICES</a>
                <a>NEWS</a>
             </div>
+            <div class="toggle-back">
+               <img
+               src="https://isopanelscu.files.wordpress.com/2024/03/cross.png"
+               alt="x-icon"
+               class="x-icon"
+               id="x"
+             />
+            </div>
          </div>
       </div>
 
       <div class="home-page">
-<!-- ================================================================================HOME LAYOUT=============================================== -->
          <div class="homepage-image-container">
             <img
               src="https://newvashaepz.com/wp-content/uploads/2024/04/Hero-image.png"
@@ -42,6 +40,46 @@
             alt="homepage-image"
             class="home-page-image hidden-large"
           />
+
+<!--=================Navbar=============================================-->
+<div class="navbar">
+      <div class="navbar-contents">
+            <img
+              src="./image/Menu bar.png"
+              alt="navbar"
+              loading="lazy"
+              class="navbar-bg-image"
+            />
+            <div class="navbar-container">
+               <div class="navbar-content">
+                  <div class="navbar-logo">
+                     <img
+                        src=""
+                        alt="logo"
+                        loading="lazy"
+                        class="navbar-logo-image"
+                     />
+                  </div>
+                  <div class="navbar-links">
+                     <a>HOME</a>
+                     <a>ABOUT US</a>
+                     <a>SERVICES</a>
+                     <a>NEWS</a>
+                  </div>
+
+                  <div id="navbar" class="navbar-icon">
+                     <img
+                     src="https://isopanelscu.files.wordpress.com/2024/03/menu.png"
+                     class="menu-icon"
+                     alt="menu"
+                   />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
             <div class="home-overlay-text">
                 <div class="home-overlay-h1">ECO THREADS</div>
                 <div class="home-overlay-h2">TEXTILES KENYA EPZ</div>
@@ -75,7 +113,7 @@
                      </div>
                      </div>
 
-                     <div class="who-we-are-content b l">
+                     <div class="who-we-are-content b l pl">
                         <img
                           src="https://newvashaepz.com/wp-content/uploads/2024/04/Icon-2.png"
                           alt="quality assurance"
@@ -99,7 +137,7 @@
                         </div>
                      </div>
 
-                     <div class="who-we-are-content  l pt">
+                     <div class="who-we-are-content  l pt pl">
                         <img
                           src="https://newvashaepz.com/wp-content/uploads/2024/04/Icon-1.png"
                           alt="quality assurance"
@@ -228,5 +266,20 @@
 
 </div>
    </section>
+
+   <script>
+        let togglebar = document.getElementById("toggle-nav");
+        let openNavigation = document.getElementById("navbar");
+        let backtoggler = document.getElementById("x");
+
+        openNavigation.addEventListener("click", function () {
+          togglebar.style.display = "block";
+        });
+
+        backtoggler.addEventListener("click", function () {
+          togglebar.style.display = "none";
+        });
+
+   </script>
 </body>
 </html>
