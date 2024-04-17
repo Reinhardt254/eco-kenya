@@ -259,15 +259,19 @@ body{
 .who-we-are{
    background-color: white;
    padding-left: 10%;
-   padding-top: 2rem;
+   padding-top: 3rem;
+   padding-bottom: 2rem;
 }
 
 .who-we-are-title{
-   padding-top: 5rem;
+   padding-top: 0rem;
 }
 
 .who-we-are-section{
    display: flex;
+   height: 100%;
+   justify-content: center;
+   align-items: center;
 }
 
 .heading{
@@ -284,7 +288,7 @@ body{
 .who-we-are-cards{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   width: 80%;
+   width: 100%;
    padding-top: 1rem;
    padding-bottom: 1rem;
 }
@@ -298,8 +302,8 @@ body{
 }
 
  .who-we-are-icon-text{
-   font-size: 0.9rem;
-   font-weight: bold;
+   font-size: 0.8rem;
+   font-weight: 600;
  }
 
 
@@ -338,6 +342,8 @@ body{
    padding: 0.5rem;
    color: whitesmoke;
    cursor: pointer;
+   font-size: 0.8rem;
+   font-weight: 600;
 }
 
 .who-we-are-button a:hover{
@@ -349,12 +355,13 @@ body{
 }
 
 .who-we-are-image{
-   width: 50vw;
+   height: auto;
+   width: 48vw;
 }
+
 
 @media only screen and (max-width: 850px){
    .who-we-are{
-      background-color: white;
       padding-left: 0.8rem;
       padding-right: 0.8rem;
       padding-top: 2rem;
@@ -395,11 +402,119 @@ body{
    }
 }
 
+@media only screen and (min-width: 600px){
+   .who-we-are-paragraph{
+      padding-top: 1rem;
+      font-weight: 100;
+      font-size: 1.4rem;
+      padding-bottom: 1rem;
+   }
+
+   .who-we-are-icon-text{
+   font-size: 1.1rem;
+}
+
+.who-we-are-cards{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   width: 60%;
+   padding-top: 2rem;
+   padding-bottom: 1.5rem;
+}
+
+.who-we-are-button a{
+   background-color: green;
+   padding: 0.5rem;
+   color: whitesmoke;
+   cursor: pointer;
+   font-size: 1rem;
+   font-weight: 600;
+}
+}
+
+@media only screen and (min-width: 900px){
+   .who-we-are-title{
+      padding-top: 0%;
+   }
+
+   .who-we-are-paragraph{
+      padding-top: 1rem;
+      font-weight: 100;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+   }
+
+   .who-we-are-button{
+      padding-top: 1.5rem;
+      transition: 0.5s ease;
+   }
+
+   .who-we-are{
+      padding-left: 10%;
+      padding-right: 0rem;
+      padding-top: 2rem;
+   }
+
+   .who-we-are-container{
+      padding-right: 0.8rem;
+   }
+
+   .who-we-are-image{
+      height: auto;
+      width: 50vw;
+   }
+}
+
+@media only screen and (min-width: 1100px){
+   .who-we-are-paragraph{
+      padding-top: 1rem;
+      font-weight: 100;
+      font-size: 1.1rem;
+      padding-bottom: 1rem;
+   }
+
+   .who-we-are-image{
+      height: auto;
+      width: 48vw;
+   }
+}
+
+@media only screen and (min-width: 1400px){
+   .who-we-are-paragraph{
+      padding-top: 1rem;
+      font-weight: 100;
+      font-size: 1.4rem;
+      padding-bottom: 1rem;
+   }
+
+   .who-we-are-cards{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+   }
+
+   .who-we-are-button a{
+      background-color: green;
+      padding: 0.5rem;
+      color: whitesmoke;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+   }
+
+   .who-we-are-icon-text{
+      font-size: 1rem;
+   }
+}
+
 /* =====================================================WHY CHOOSE US========================== */
 
 .why-choose-us{
    padding-left: 10%;
    padding-right: 10%;
+   background-color: rgb(245, 245, 245);
 }
 
 .why-choose-us-heading{
@@ -418,7 +533,7 @@ body{
    width: 100%;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
 }
 
@@ -427,6 +542,7 @@ body{
    padding-top: 0.5rem;
    font-weight: 600;
    font-size: 1.4rem;
+   color: green;
 }
 
 .why-choose-us-p{
@@ -435,10 +551,33 @@ body{
    font-size: 1rem;
 }
 
+@media only screen and (min-width: 850px){
+   .why-choose-us-h1{
+      width: 80%;
+      padding-top: 0.5rem;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: green;
+   }
+   
+   .why-choose-us-p{
+      width: 80%;
+      padding-top: 0.5rem;
+      font-size: 1rem;
+   }
+
+   .why-choose-us{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 3rem;
+   }
+}
+
 @media only screen and (max-width: 600px){
    .why-choose-us{
       padding-left: 0.8rem;
       padding-right: 0.8rem;
+      padding-bottom: 1rem;
    }
 
    .why-choose-us-heading{
@@ -460,7 +599,7 @@ body{
       width: auto;
       padding-top: 0.5rem;
       font-weight: 600;
-      font-size: 1.4rem;
+      font-size: 1rem;
       padding-left: 0.8rem;
    }
    
