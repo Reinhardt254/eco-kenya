@@ -1,3 +1,7 @@
+body{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .services-page-image{
    width: 100%;
    max-height: 80vh;
@@ -44,7 +48,7 @@
 
 .services-adapt-card-h1{
    font-weight: 500;
-   font-size: 1.4rem;
+   font-size: 1.6rem;
    padding-top: 0.3rem;
    text-align: center;
 }
@@ -52,8 +56,8 @@
 .services-our-h1{
    text-align: center;
    padding-bottom: 0.8rem;
-   font-size: 1.4rem;
-   color: green;
+   font-size: 1.6rem;
+   color: #42946A;
 }
 
 .services-our-container{
@@ -62,7 +66,7 @@
    padding-right: 0.8rem;
    padding-top: 1rem;
    padding-bottom: 1rem;
-   background-color: rgb(237, 255, 251);
+   background-color: #EFF4F4;
 }
 
 .services-our-card{
@@ -82,18 +86,22 @@
 .services-our-h2{
    padding-bottom: 0.4rem;
    font-weight: 600;
-   font-size: 1rem;
+   font-size: 1.4rem;
+   color: #639287;
 }
 
 .services-our-p{
-   font-size: 0.9rem;
+   font-size: 1.2rem;
    font-weight: 500;
+   color: gray;text-align: center;
+   padding-bottom: 2rem;
 }
 
 @media only screen and (min-width: 600px){
    .services-our-cards{
       display: flex;
       flex-direction: row;
+      width: 100%;
    }
 
    .services-adapt-card-h1{
@@ -105,9 +113,9 @@
    
    .services-our-h1{
       text-align: center;
-      padding-bottom: 0.8rem;
+      padding-bottom: 2rem;
+      padding-top: 3rem;
       font-size: 1.8rem;
-      color: green;
    }
 
    .services-our-h2{
@@ -122,7 +130,7 @@
    }
 
    .services-our-card{
-      width: auto;
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -136,16 +144,22 @@
 @media only screen and (min-width: 800px){
    .services-our-container{
       height: 100%;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
       padding-top: 1rem;
       padding-bottom: 1rem;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
 
    .services-adapt-card-h1{
       font-weight: 500;
       font-size: 2.2rem;
       padding-top: 1rem;
+      padding-bottom: 1rem;
       text-align: center;
    }
 
@@ -156,18 +170,30 @@
    }
    
    .services-our-p{
-      font-size: 1.2rem;
-      font-weight: 500;
+      padding-top: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 100;
    }
 }
 
 @media only screen and (min-width: 1500px){
    .services-our-container{
       height: 100%;
-      padding-left: 15%;
-      padding-right: 15%;
+      padding-left: 10%;
+      padding-right: 10%;
       padding-top: 2.5rem;
       padding-bottom: 2rem;
+   }
+
+   .services-our-card{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      text-align: center;
    }
 }
 

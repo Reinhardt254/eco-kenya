@@ -17,6 +17,7 @@ body{
 
 .navbar-bg-image{
    width: 100%;
+   min-height: 2.5rem;
 }
 
 .navbar-contents{
@@ -35,10 +36,16 @@ body{
    width: 90vw;
    display: flex;
    justify-content: space-between;
+   height: 100%;
+   align-items: center;
 }
 
 .navbar-logo{
-   margin-right: auto;
+   margin-right: aut;
+}
+
+.navbar-logo-image{
+   width: 20vw;
 }
 
 .navbar-logo-image{
@@ -59,6 +66,15 @@ body{
 @media only screen and (max-width: 600px){
    .navbar-links {
       display: none;
+   }
+
+   .navbar-logo-image{
+      width: 30vw;
+   }
+
+   .navbar-logo-image{
+      margin-right: auto;
+      padding-left: 1rem;
    }
 }
 
@@ -108,6 +124,8 @@ body{
    cursor: pointer;
    padding-right: 1rem;
 }
+
+
 
 .x-icon{
    height: 24px;
@@ -174,7 +192,7 @@ body{
 }
 
 .home-overlay-button a{
-   background-color: green;
+   background-color: #42946A;
    font-size: 0.7rem;
    font-weight: 600;
    padding: 0.6rem;
@@ -182,7 +200,7 @@ body{
 
 .home-overlay-button a:hover {
    background-color: white;
-   color: green;
+   color: #42946A;
    transition: 0.5s ease;
 }
 
@@ -220,7 +238,7 @@ body{
     }
 
     .home-overlay-button a{
-      background-color: green;
+      background-color: #42946A;
       font-size: 0.8rem;
       font-weight: 600;
       padding: 0.6rem;
@@ -257,7 +275,7 @@ body{
 /* =======================================================================WHO WE ARE======================================================= */
 
 .who-we-are{
-   background-color: white;
+   background-color: WHITE;
    padding-left: 10%;
    padding-top: 3rem;
    padding-bottom: 2rem;
@@ -308,20 +326,20 @@ body{
 
 
 .r{
-   border-right: 1px solid green;
+   border-right: 1px solid #42946A;
 }
 
 .l{
-   border-left: 1px solid green;
+   border-left: 1px solid #42946A;
 }
 
 .b{
-   border-bottom: 1px solid green;
+   border-bottom: 1px solid #42946A;
    padding-bottom: 1rem;
 }
 
 .t{
-   border-top: 1px solid green;
+   border-top: 1px solid #42946A;
 }
 
 .pt{
@@ -338,7 +356,7 @@ body{
 }
 
 .who-we-are-button a{
-   background-color: green;
+   background-color: #42946A;
    padding: 0.5rem;
    color: whitesmoke;
    cursor: pointer;
@@ -347,9 +365,9 @@ body{
 }
 
 .who-we-are-button a:hover{
-   background-color: white;
+   background-color: #EFF4F4;
    padding: 0.5rem;
-   color: green;
+   color: #42946A;
    cursor: pointer;
    transition: 0.5s ease;
 }
@@ -423,9 +441,9 @@ body{
 }
 
 .who-we-are-button a{
-   background-color: green;
+   background-color: #42946A;
    padding: 0.5rem;
-   color: whitesmoke;
+   color: white;
    cursor: pointer;
    font-size: 1rem;
    font-weight: 600;
@@ -496,7 +514,7 @@ body{
    }
 
    .who-we-are-button a{
-      background-color: green;
+      background-color: #42946A;
       padding: 0.5rem;
       color: whitesmoke;
       cursor: pointer;
@@ -542,7 +560,7 @@ body{
    padding-top: 0.5rem;
    font-weight: 600;
    font-size: 1.4rem;
-   color: green;
+   color: #639287;
 }
 
 .why-choose-us-p{
@@ -556,20 +574,18 @@ body{
       width: 80%;
       padding-top: 0.5rem;
       font-weight: 600;
-      font-size: 1.2rem;
-      color: green;
    }
    
    .why-choose-us-p{
       width: 80%;
       padding-top: 0.5rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
    }
 
    .why-choose-us{
       padding-left: 10%;
       padding-right: 10%;
-      padding-bottom: 3rem;
+      padding-bottom: 5rem;
    }
 }
 
@@ -617,7 +633,7 @@ body{
    height: 100%;
    padding-left: 10%;
    padding-right: 10%;
-   background-color: black;
+   background-color: #3F4040;
    color: white;
    margin-top: 3rem;
 }
@@ -630,6 +646,10 @@ body{
 
 .footer-content-logo{
    width: 40%; 
+}
+
+.footer-logo-image{
+   width: 50%;
 }
 
 .footer-links{
@@ -645,7 +665,7 @@ body{
 }
 
 .footer-links a:hover{
-   color: green;
+   color: #42946A;
 }
 
 .footer-address-text{
