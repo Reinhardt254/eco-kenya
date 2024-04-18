@@ -86,7 +86,7 @@ body{
 
 .mission-h1{
    text-align: end;
-   padding-right: 40%;
+   padding-right: 35vw;
 }
 
 .about-cards-text-p{
@@ -196,7 +196,7 @@ body{
 
 @media only screen and (min-width: 600px){
    .about-cards-image{
-      height: auto;
+      height: 100%;
       width: 100%
    }
 
@@ -212,7 +212,7 @@ body{
 @media only screen and (min-width: 850px){
    .about-cards-image{
       height: 100%;
-      width: auto
+      width: 100%
    }
 
    .about-cards-container{
@@ -265,9 +265,14 @@ body{
       height:auto;
     }
 
+    .mission-h1{
+      text-align: end;
+      padding-right: 30vw;
+   }
+
     .about-cards-image{
       height: 100%;
-      width: auto
+      width: 100%;
    }
 
    .about-cards-text-p{
