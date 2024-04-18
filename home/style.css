@@ -50,7 +50,6 @@ body{
    bottom: 50%;
    left: 10%;
    transform: translate(-10%, 50%);
-   color: white;
 }
 
 .navbar-content{
@@ -82,6 +81,13 @@ body{
 .navbar-links a{
    padding-right: 2rem;
    cursor: pointer;
+   color: white;
+}
+
+.navbar-links a:hover{
+   padding-right: 2rem;
+   cursor: pointer;
+   color:#42946A;
 }
 
 @media only screen and (max-width: 600px){
@@ -693,8 +699,8 @@ body{
 /* ==================================================================FOOTER=================================================================== */
 .footer{
    height: 100%;
-   padding-left: 10%;
-   padding-right: 10%;
+   padding-left: 15%;
+   padding-right: 15%;
    background-color: #3F4040;
    color: white;
    margin-top: 3rem;
@@ -711,34 +717,68 @@ body{
 }
 
 .footer-logo-image{
-   width: 50%;
+   width: 100%;
 }
 
 .footer-links{
    display: flex;
    flex-direction: column;
-   width: 30%;
+   width: 100%;
 }
 
 .footer-links a{
+   font-size: 0.9rem;
    text-decoration: none;
    padding-bottom: 1rem;
    cursor: pointer;
+   text-align: center;
 }
 
 .footer-links a:hover{
    color: #42946A;
 }
 
+.footer-address{
+   width: 50%;
+}
+
 .footer-address-text{
+   font-size: 0.9rem;
    padding-bottom: 1rem;
+   text-align: center;
+   width: 100%;
 }
 
 .footer-rights-text{
+   font-size: 0.9rem;
    text-align: center;
    padding-bottom: 3rem;
    padding-top: 2rem;
    border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 600px){
+   .footer-links a{
+      text-decoration: none;
+      padding-bottom: 1rem;
+      font-size: 0.8rem;
+      font-weight: 400;
+      cursor: pointer;
+   }
+
+   .footer-address-text{
+      padding-bottom: 1rem;
+      font-size: 0.8rem;
+      font-weight: 400;
+   }
+
+   .footer-rights-text{
+      font-size: 0.8rem;
+      text-align: center;
+      padding-bottom: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid gray;
+   }
 }
 
 @media only screen and (max-width: 800px){
